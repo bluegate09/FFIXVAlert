@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/option_eu"
+        android:title="@string/menu_europeandatacenters"/>
+    <item
+        android:id="@+id/option_jp"
+        android:title="@string/menu_japanesedatacenters"/>
+    <item
+        android:id="@+id/option_na"
+        android:title="@string/more_northamericandatacenters"/>
+</menu>

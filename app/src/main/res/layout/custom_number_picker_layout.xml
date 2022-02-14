@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/timePickerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:text="Refresh Timer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/timePickerSubTitleMinute"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timePickerTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="8dp"
+            android:layout_margin="8dp"
+            android:text="Second"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle" />
+
+        <NumberPicker
+            android:id="@+id/numberPickerSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timePickerSubTitleMinute"
+            android:layout_alignStart="@+id/timePickerSubTitleMinute"
+            android:layout_alignEnd="@id/timePickerSubTitleMinute"
+            android:layout_margin="8dp"
+            android:layout_toStartOf="@id/timePickerSubTitleMinute" />
+
+
+    </RelativeLayout>
+</layout>

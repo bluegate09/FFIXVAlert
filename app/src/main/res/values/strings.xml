@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FFIXVAlert</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_europeandatacenters">European Data Centers</string>
+    <string name="menu_japanesedatacenters">Japanese Data Centers</string>
+    <string name="more_northamericandatacenters">North American Data Centers</string>
+    <string name="show_data_centers_menu">Show Data Centers Menu</string>
+    <string name="ffxiv_notification_channel_id">ffxiv_channel</string>
+    <string name="ffxiv_notification_channel_name">FFIXV Alert</string>
+</resources>
