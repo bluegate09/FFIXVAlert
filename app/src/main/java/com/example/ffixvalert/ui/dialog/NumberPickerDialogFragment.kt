@@ -44,11 +44,17 @@ class NumberPickerDialogFragment : DialogFragment() {
             maxValue = 60
         }
 
+        binding.btCancelService.setOnClickListener {
+            if(viewModel.checkIsServiceRunning()){
+                context?.stopService(Intent(requireContext(), FetchDataService::class.java))
+                Toast.makeText(context,"任務取消",Toast.LENGTH_LONG).show()
+            }
+        }
+
         builder.setPositiveButton(
             "OK"
         ) { _, _ ->
             val triggerTimer = pickerSecond.value
-            viewModel.checkIsServiceRunning()
 
             if (set!!.size == 0) {
                 Toast.makeText(context, "No Server is selected", Toast.LENGTH_LONG).show()
@@ -61,9 +67,7 @@ class NumberPickerDialogFragment : DialogFragment() {
 
         builder.setNegativeButton(
             "Cancel"
-        ) { _, _ ->
-            context?.stopService(Intent(requireContext(), FetchDataService::class.java))
-        }
+        ) { _, _ -> }
 
         builder.setView(binding.root)
         return builder.create()

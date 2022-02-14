@@ -113,8 +113,8 @@ class FFixvAlertViewModel(private val app: Application) : AndroidViewModel(app) 
         _isConnectToInternet.postValue(isConnect)
     }
 
-    fun checkIsServiceRunning(){
-        _isServiceRunning.value = app.applicationContext.isServiceRunning(FetchDataService::class.java)
+    fun checkIsServiceRunning(): Boolean{
+        return app.applicationContext.isServiceRunning(FetchDataService::class.java)
     }
 
 }

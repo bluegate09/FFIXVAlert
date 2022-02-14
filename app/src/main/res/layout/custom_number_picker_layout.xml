@@ -42,6 +42,17 @@
             android:layout_margin="8dp"
             android:layout_toStartOf="@id/timePickerSubTitleMinute" />
 
+        <Button
+            android:id="@+id/btCancelService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL TASK"
+            android:textColor="#CC0F0F"
+            android:layout_below="@+id/numberPickerSecond"
+            android:layout_alignStart="@+id/timePickerSubTitleMinute"
+            android:layout_alignEnd="@id/timePickerSubTitleMinute"
+            />
+
 
     </RelativeLayout>
 </layout>
